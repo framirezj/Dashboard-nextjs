@@ -9,6 +9,12 @@ import {
 import { Button } from "@/app/ui/button";
 import { createInvoice } from "@/app/lib/actions";
 
+/* type FormProps = {
+  customers: CustomerField[];
+} */
+
+//export default function Form({ customers }: FormProps) {}
+
 export default function Form({ customers }: { customers: CustomerField[] }) {
   return (
     <form action={createInvoice}>
